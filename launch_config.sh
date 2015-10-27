@@ -1,0 +1,1 @@
+aws autoscaling create-launch-configuration --launch-configuration-name satyajit_config --image-id ami-d05e75b8 --key-name satyajit  --security-groups sg-54467b33 --instance-type t2.micro --user-data file:/install-webserver.sh --iam-instance-profilesbaral1
