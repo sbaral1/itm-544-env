@@ -1,14 +1,15 @@
-<?php
-require 'vendor/autoload.php';
+Name: <input type="text" name="name" value="<?php echo $name;?>">
 
-$s3 = new Aws\S3\S3Client([
-    'version' => 'latest',
-    'region'  => 'us-east-1'
-]);
+E-mail: <input type="text" name="email" value="<?php echo $email;?>">
 
-$s3 = $sdk->createS3();
-$result = $s3 ->listBuckets();
-// Get the name of each bucket
-$results = $result->search('Buckets[].Name');
+Website: <input type="text" name="website" value="<?php echo $website;?>">
 
-print $results;
+Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+
+Gender:
+<input type="radio" name="gender"
+<?php if (isset($gender) && $gender=="female") echo "checked";?>
+value="female">Female
+<input type="radio" name="gender"
+<?php if (isset($gender) && $gender=="male") echo "checked";?>
+value="male">Male
