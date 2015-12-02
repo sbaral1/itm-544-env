@@ -16,7 +16,7 @@
 
             <p>A mini project for Cloud Computing - Satyajit Baral</p>
             <p>Illinois Institute of Technology</p>
-            <p><a href="https://github.com/gpuenteallott/itmo544-CloudComputing-mp1">Project in GitHub</a></p>
+            <p><a href="https://github.com/sbaral1/itm-544-env">Project in GitHub</a></p>
         </header>
         <div class="aside">
             <p>Don't have an image?</p>
